@@ -30,7 +30,8 @@ def reconstruct(combined):
     bf3, demod3, final3 = reconstruct_audio(combined, LC3, HC3, FC3, 'output3')
     plot_frequency_domain_array([bf1, bf2, bf3], 'BPF', 7)
     plot_frequency_domain_array([demod1, demod2, demod3], 'Demodulation', 8)
-    plot_time_domain_array([final1, final2, final3], 'Final', 9)
+    plot_frequency_domain_array([final1, final2, final3], 'Final', 9)
+    plot_time_domain_array([final1, final2, final3], 'Final', 10)
 
 
 def main():
